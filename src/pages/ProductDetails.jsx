@@ -14,7 +14,7 @@ const ProductDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
-const [notFound, setNotFound] = useState(false);
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     // Simulate fetching product data
@@ -29,7 +29,7 @@ const [notFound, setNotFound] = useState(false);
           setNotFound(true);
         }
         setLoading(false);
-      }, 500); // Simulate network delay
+      }, 1000); // Simulate network delay
     };
 
     fetchProduct();
@@ -65,18 +65,14 @@ const [notFound, setNotFound] = useState(false);
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="bg-cream">
+    <>
+      <div className="bg-cream ">
         <div className="container mx-auto px-4">
           <Breadcrumb productName={product.name} />
         </div>
       </div>
       <ProductDetailsView product={product} />
-    </motion.div>
+    </>
   );
 };
 

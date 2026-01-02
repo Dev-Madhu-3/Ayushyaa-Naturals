@@ -46,7 +46,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-[80vh] md:h-screen w-full overflow-hidden">
       <Swiper
         modules={[Autoplay, Pagination]}
         effect="slide"

@@ -52,7 +52,7 @@ const ProductFilters = ({ filters, onFilterChange }) => {
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div>
-                <h3 className="text-lg font-semibold text-text-dark mb-4 md:mb-0">
+                <h3 className="text-lg font-semibold text-text-dark mb-4 md:mb-2">
                   Categories
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -72,14 +72,14 @@ const ProductFilters = ({ filters, onFilterChange }) => {
                 </div>
               </div>
 
-              <div className="mt-4 md:mt-0">
+              {/* <div className="mt-4 md:mt-0">
                 <button
                   onClick={() => handleCategoryChange("all")}
                   className="text-text-light hover:text-primary-green transition-colors"
                 >
                   Clear Filters
                 </button>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         )}

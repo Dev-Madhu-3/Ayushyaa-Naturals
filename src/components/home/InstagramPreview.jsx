@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 import { slideInFromBottom, staggerContainer } from "../../utils/animations";
+import { Fade } from "react-awesome-reveal";
 
 const InstagramPreview = () => {
   const instagramPosts = [
@@ -65,32 +66,34 @@ const InstagramPreview = () => {
           </a>
         </motion.div>
 
-        <motion.div
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={staggerContainer}
-        >
-          {instagramPosts.map((post, index) => (
-            <motion.div
-              key={post.id}
-              className="relative overflow-hidden rounded-lg aspect-square group cursor-pointer"
-              variants={slideInFromBottom}
-              custom={index * 0.1}
-              whileHover={{ scale: 1.05 }}
-            >
-              <img
-                src={post.image}
-                alt={`Instagram post ${post.id}`}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                <Instagram size={20} className="text-white" />
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <Fade
+            direction="right"
+            cascade
+            damping={0.1}
+            delay={200}
+            triggerOnce
+          >
+            {instagramPosts.map((post, index) => (
+              <motion.div
+                key={post.id}
+                className="relative overflow-hidden rounded-lg aspect-square group cursor-pointer"
+                variants={slideInFromBottom}
+                custom={index * 0.1}
+                whileHover={{ scale: 1.05 }}
+              >
+                <img
+                  src={post.image}
+                  alt={`Instagram post ${post.id}`}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                  <Instagram size={20} className="text-white" />
+                </div>
+              </motion.div>
+            ))}
+          </Fade>
+        </div>
       </div>
     </section>
   );

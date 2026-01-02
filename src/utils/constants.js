@@ -4,8 +4,8 @@ export const products = [
     id: 1,
     name: "Herbal Shampoo",
     category: "herbal",
-    price: 12.99,
-    oldPrice: 15.99,
+    price: 199,
+    oldPrice: 249,
     rating: 4.8,
     image:
       "https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767002630/IMG_20251229_153031_gaubrb.jpg",
@@ -27,7 +27,8 @@ export const products = [
     id: 2,
     name: "Natural Laddus",
     category: "sweets",
-    price: 8.99,
+    price: 149,
+    oldPrice:199,
     rating: 4.9,
     image:
       "https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767002630/IMG_20251229_153011_pumr7y.jpg",
@@ -48,11 +49,11 @@ export const products = [
     id: 3,
     name: "Turmeric Face Pack",
     category: "skincare",
-    price: 10.99,
-    oldPrice: 13.99,
+    price: 299,
+    oldPrice: 349,
     rating: 4.7,
     image:
-      "https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767002629/IMG_20251229_152723_z6ymuz.jpg",
+      "https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767349685/view-yellow-powder-arrangement_jmkcku.jpg",
     description:
       "A rejuvenating face pack with the goodness of turmeric, sandalwood, and neem that brightens your skin and fights acne-causing bacteria.",
     isHandmade: true,
@@ -76,8 +77,8 @@ export const products = [
     id: 4,
     name: "Ayurvedic Snana Bath Powder (23 Herbs)",
     category: "skincare",
-    price: 11.99,
-    oldPrice: 14.99,
+    price: 298,
+    oldPrice: 346,
     rating: 4.9,
     image:
       "https://res.cloudinary.com/dpk6qsn0e/image/upload/v1767011992/IMG_20251229_180656_th51so.jpg",
