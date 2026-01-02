@@ -28,7 +28,7 @@ const CartDrawer = () => {
     message += "Please let me know the next steps for payment and delivery.";
 
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "919876543210"; // Replace with your actual number
+    const phoneNumber = "7416595826"; // Replace with your actual number
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
       "_blank"

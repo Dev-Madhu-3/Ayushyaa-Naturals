@@ -65,7 +65,7 @@ const Contact = () => {
                   <p className="text-text-light">
                     123 Nature Lane, Green Valley
                     <br />
-                    Bangalore, Karnataka 560001
+                    Hyderabad, Telangana 500018
                     <br />
                     India
                   </p>
@@ -79,7 +79,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-text-dark mb-1">Phone</h3>
                   <p className="text-text-light">
-                    +91 98765 43210
+                    +91 74165 95826
                     <br />
                     Mon-Fri: 9am-6pm IST
                   </p>
@@ -227,7 +227,7 @@ const Contact = () => {
                 with your inquiry.
               </p>
               <a
-                href="https://wa.me/919876543210?text=Hello! I have a question about Ayushyaa Naturals."
+                href="https://wa.me/7416595826?text=Hello! I have a question about Ayushyaa Naturals."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-medium rounded-lg transition-colors"

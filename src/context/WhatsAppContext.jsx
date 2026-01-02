@@ -12,7 +12,7 @@ export const useWhatsApp = () => {
 };
 
 export const WhatsAppProvider = ({ children }) => {
-  const phoneNumber = "919876543210"; // Replace with your actual WhatsApp number
+  const phoneNumber = "7416595826"; // Replace with your actual WhatsApp number
 
   const sendProductMessage = (product, quantity) => {
     const totalPrice = (product.price * quantity).toFixed(2);

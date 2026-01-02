@@ -18,8 +18,8 @@ const Footer = () => {
     <footer className="bg-primary-green text-white pt-12 pb-6">
       <div className="container mx-auto px-4">
         {/* Top Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-        <Fade delay={200} damping={0.2} cascade triggerOnce>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <Fade delay={200} damping={0.2} cascade triggerOnce>
             {/* Brand */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
@@ -141,12 +141,12 @@ const Footer = () => {
                 <li className="flex items-start">
                   <MapPin size={18} className="mr-2 mt-1" />
                   <span className="text-white/80">
-                    123 Nature Lane, Green Valley, India 560001
+                    123 Nature Lane, Green Valley, India 500018
                   </span>
                 </li>
                 <li className="flex items-center">
                   <Phone size={18} className="mr-2" />
-                  <span className="text-white/80">+91 98765 43210</span>
+                  <span className="text-white/80">+91 74165 95826</span>
                 </li>
                 <li className="flex items-center">
                   <Mail size={18} className="mr-2" />
@@ -154,8 +154,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-        </Fade>
-          </div>
+          </Fade>
+        </div>
 
         {/* Bottom Section */}
         <Fade delay={300} triggerOnce>
